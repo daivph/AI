@@ -1,4 +1,4 @@
-# 📃 Báo Cáo CRISP-DM: Dự Báo Năng Suất Sản Xuất Nông Nghiệp Hoa Kỳ
+# 📃 Báo Cáo: Dự Báo Năng Suất Sản Xuất Nông Nghiệp Hoa Kỳ
 
 ## 1. ✨ Mục Tiêu & Xác Định Vấn Đề
 
@@ -44,12 +44,23 @@ Dự báo năng suất cho các loại cây trồng tại Hoa Kỳ dựa trên d
 
 * **Chỉ số đánh giá:**
 
+  **Almonds, in shell:**
   * MAE (Mean Absolute Error): 456.94 kg/ha
   * R² (R-squared): 0.7418
+ 
+  **Apples:**
+  * MAE (Mean Absolute Error): 1455.46 kg/ha
+  * R² (R-squared): 0.9419
+ 
+  **Apricots:**
+  * MAE (Mean Absolute Error): 1817.30 kg/ha
+  * R² (R-squared): 0.0105
 
 ### ✨ Nhận định:
 
-* Sai số \~457 kg/ha là đáng kể nhưng chấp nhận được.
+* Sai số dao động tùy theo sản phẩm:
+  * Apples: dự đoán rất tốt (R² > 0.94)
+  * Apricots: không bám sát xu hướng (R² ~ 0)
 * Mô hình Prophet bám sát xu hướng, dự báo tốt cho chuỗi thời gian lâu dài.
 
 ## 6. 🚀 Triển Khai & Đề Xuất Cải Thiện
@@ -73,7 +84,7 @@ Dự báo năng suất cho các loại cây trồng tại Hoa Kỳ dựa trên d
 
 ## 📄 Tài Liệu Liên Quan
 
-### ▶️ Mã Demo Trên Google Colab:
+### ▶️ Demo Trên Google Colab:
 
 [https://colab.research.google.com/drive/1IjK__-x5-q4HHBGEzhPuw-VlEb_VtV3L?usp=sharing)
 
